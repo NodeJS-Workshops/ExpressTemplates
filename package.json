@@ -1,0 +1,29 @@
+{
+	"name": "expresstemplates",
+	"version": "1.0.0",
+	"description": "express.js demo",
+	"main": "app.js",
+	"scripts": {
+		"start": "nodemon app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NodeJS-Workshops/ExpressTemplates.git"
+	},
+	"keywords": [
+		"express",
+		"handlebars"
+	],
+	"author": "TRC",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/NodeJS-Workshops/ExpressTemplates/issues"
+	},
+	"homepage": "https://github.com/NodeJS-Workshops/ExpressTemplates#readme",
+	"dependencies": {
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.7"
+	}
+}
