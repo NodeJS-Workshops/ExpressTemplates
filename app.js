@@ -1,18 +1,9 @@
 const express = require('express');
-const handlebars = require('express-handlebars');
 const config = require('./config/config');
+const expressConfig = require('./config/express');
 
 const app = express();
-
-app.engine(
-  'hbs',
-  handlebars({
-    extname: 'hbs'
-  })
-);
-app.set('view engine', 'hbs');
-
-app.use(express.static('public'));
+expressConfig(app);
 
 // console.log(process.env.NODE_ENV);
 app.get('/', (req, res) => {
