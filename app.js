@@ -5,18 +5,20 @@ const config = require('./config/config');
 const app = express();
 
 app.engine(
-	'hbs',
-	handlebars({
-		extname: 'hbs'
-	})
+  'hbs',
+  handlebars({
+    extname: 'hbs'
+  })
 );
 app.set('view engine', 'hbs');
 
+app.use(express.static('public'));
+
 // console.log(process.env.NODE_ENV);
 app.get('/', (req, res) => {
-	res.render('home');
+  res.render('home');
 });
 
 app.listen(config.PORT, () => {
-	console.log(`Server is running on PORT ${config.PORT}...`);
+  console.log(`Server is running on PORT ${config.PORT}...`);
 });
