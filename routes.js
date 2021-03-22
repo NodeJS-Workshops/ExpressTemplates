@@ -1,11 +1,11 @@
 const { Router } = require('express');
 const cubeController = require('./controllers/cubeController');
-const aboutController = require('./controllers/aboutController');
+const homeController = require('./controllers/homeController');
 
 const router = Router();
 
-router.use('/', cubeController);
-router.use('/about', aboutController);
+router.use('/', homeController);
+router.use('/cubes', cubeController);
 router.use('*', (req, res) => {
   res.render('404');
 });

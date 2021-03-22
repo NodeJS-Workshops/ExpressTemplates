@@ -10,4 +10,9 @@ router.get('/create', (req, res) => {
   res.render('create', { title: 'Create' });
 });
 
+router.get('/:id', (req, res) => {
+  console.log(req.params.id);
+  res.render('details');
+});
+
 module.exports = router;
