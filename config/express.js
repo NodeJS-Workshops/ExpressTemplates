@@ -11,6 +11,8 @@ function expressSetup(app) {
   app.set('view engine', 'hbs');
 
   app.use(express.static('public'));
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
 }
 
 module.exports = expressSetup;

@@ -23,7 +23,8 @@
 	"homepage": "https://github.com/NodeJS-Workshops/ExpressTemplates#readme",
 	"dependencies": {
 		"express": "^4.17.1",
-		"express-handlebars": "^5.2.1"
+		"express-handlebars": "^5.2.1",
+		"mongoose": "^5.12.1"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.7"
