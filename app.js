@@ -1,7 +1,7 @@
 const express = require('express');
 const config = require('./config/config');
 const expressConfig = require('./config/express');
-const routes = require('./routes/cubeRoutes');
+const routes = require('./routes');
 
 const app = express();
 expressConfig(app);
